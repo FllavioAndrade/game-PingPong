@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração Automatizada de Servidor Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #836FFF; /* Cor de fundo dentro da paleta de SlateBlue */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #483D8B; /* Texto dentro da paleta de SlateBlue */
+        }
+
+        h2 {
+            color: #6a5acd; /* Texto dentro da paleta de SlateBlue */
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        p {
+            color: #4B0082; /* Texto dentro da paleta de SlateBlue */
+            line-height: 1.6;
+        }
+
+        ul {
+            color: #4B0082; /* Texto dentro da paleta de SlateBlue */
+            line-height: 1.6;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .highlight {
+            color: #483D8B; /* Texto dentro da paleta de SlateBlue */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Configuração Automatizada de Servidor Web</h1>
+
+        <h2>Objetivo</h2>
+        <p>Estamos em fase de implantação de um novo projeto piloto que requer a configuração automatizada de um servidor web. A tarefa envolve a utilização de scripts de inicialização (<span class="highlight">User Data</span>) para automatizar a instalação e configuração de um servidor web (Nginx ou Apache) em uma instância Amazon Linux.</p>
+
+        <h2>Requisitos</h2>
+        <p><span class="highlight">Script de User Data</span>:</p>
+        <ul>
+            <li>Desenvolver um script para ser executado no momento do boot da instância. O script deve incluir a instalação do servidor web (Nginx ou Apache) e a configuração básica necessária.</li>
+        </ul>
+
+        <p><span class="highlight">Servidor Web</span>:</p>
+        <ul>
+            <li>Escolha entre Nginx ou Apache para servir uma página HTML simples. O conteúdo da página HTML deve ser de sua autoria e deve incluir, no mínimo, uma saudação e uma breve descrição do servidor.</li>
+        </ul>
+
+        <p><span class="highlight">Configuração da Página HTML</span>:</p>
+        <ul>
+            <li>A página HTML deve ser hospedada no diretório padrão do servidor web escolhido (/var/www/html ou /usr/share/nginx/html). Garantir que a página seja acessível via HTTP logo após a instância ser iniciada.</li>
+        </ul>
+
+        <h2>Critérios de Aceitação</h2>
+        <ul>
+            <li>A instância deve estar completamente operacional e a página web deve ser acessível a partir do navegador de qualquer máquina na rede após a inicialização.</li>
+            <li>O script de User Data deve ser eficiente e seguir as melhores práticas de segurança e automação.</li>
+            <li>O script deverá ser entregue no LMS.</li>
+            <li>Deverá ser entregue até dia 18/08.</li>
+        </ul>
+    </div>
+</body>
+</html>
